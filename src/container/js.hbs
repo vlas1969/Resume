@@ -1,0 +1,128 @@
+<div>
+    <section>
+      <div>
+        <h1>{{name}}</h1>
+      </div>
+
+<br>
+<hr>
+
+      <div><p>{{description}}</p></div>
+
+      <br>
+      <hr>
+
+      {{#with history}}
+      {{year}}
+      <br>
+      {{founder}}
+
+      <br>
+      <hr>
+      {{/with}}
+
+      <br>
+      <p><strong>Types</strong></p>
+      <ul>
+      {{#each types}}
+      <li>{{this}}</li>
+      {{/each}}
+      </ul>
+      <br>
+      <hr>
+
+      
+     
+      
+<br>
+<hr>
+  
+      
+      </ul>
+
+    <p><strong>Syntax</strong></p>  
+
+     
+    {{#with syntax}}
+    <p><strong>variables</strong></p>  
+    {{#each variables}}
+        <button type="button" class="btn btn-secondary">{{this}}</button>
+    {{/each}}
+
+    <br>
+    <br>
+
+    <p><strong>functions</strong></p>
+       <button type="button" class="btn btn-secondary">functions</button>
+
+    <br>
+    <br>
+
+    <p><strong>conditionals</strong></p> 
+
+    {{#each conditionals}}
+        <button type="button" class="btn btn-secondary">{{this}}</button>
+    {{/each}}
+
+    <br>
+    <br>
+
+    <p><strong>loops</strong></p>
+
+    {{#each loops}}
+        <button type="button" class="btn btn-secondary">{{this}}</button>
+    {{/each}} 
+
+    <br>
+    <br>
+
+     <p><strong>classes</strong></p>
+
+       <button type="button" class="btn btn-secondary">class</button>
+
+    <br>
+    <br>
+    <hr>
+
+    {{/with}}
+       <ul>
+
+        <p><strong>Features</strong></p>
+
+  {{#each features}}
+  <li><span class="badge rounded-pill text-bg-warning">{{this}}</span></li>
+  {{/each}}
+   </ul> 
+
+   <hr>
+   <br>
+
+   <p><strong>Libraries</strong></p> 
+
+   {{#each libraries}}
+      <button type="button" class="btn btn-success">{{this}}</button>
+   {{/each}}
+
+   <hr>
+   <br>
+
+   <p><strong>Tools</strong></p> 
+
+
+   {{#each tools}}
+      <span class="badge rounded-pill text-bg-primary">{{this}}</span>
+  {{/each}}
+
+  <br>
+  <hr>
+
+  <p><strong>Community</strong></p> 
+
+
+  {{#each community}}
+  
+      <div><button type="button" class="btn btn-link">{{name}}</button></div>
+      <div><button type="button" class="btn btn-link">{{type}}</button></div>
+  {{/each}}
+    </section>
+</div>
