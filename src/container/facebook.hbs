@@ -1,0 +1,79 @@
+<div>
+    <section>
+      <h1><span class="badge text-bg-primary">{{name}}</span></h1>
+
+      <br>
+      <hr>
+
+      <div>
+        <h2><span class="badge text-bg-warning">users</span></h2>
+
+        <br>
+        <hr>
+
+        <ul>
+        {{#each users}}
+        <li>{{id}}</li>
+        <li>{{name}}</li>
+        <li>{{gender}}</li>
+        <li>{{age}}</li>
+
+        <br>
+        <hr>
+
+        <h3><span class="badge text-bg-success">friends</span></h3>
+        
+        {{#each friends}}
+        <li>{{id}}</li>
+        <li>{{name}}</li>
+        <li>{{gender}}</li>
+        <li>{{age}}</li>
+        
+
+        <br>
+        <hr>
+
+        <h3><span class="badge text-bg-success">mutual_friends</span></h3>
+
+        {{#each mutual_friends}}
+        <li>{{id}}</li>
+        <li>{{name}}</li>
+        <li>{{gender}}</li>
+        <li>{{age}}</li>
+        {{/each}}
+        {{/each}}
+        <br>
+        <hr>
+
+        <h2><span class="badge text-bg-warning">groups</span></h2>
+        
+        <br>
+        <hr>
+
+        {{#each groups}}
+        <li>{{id}}</li>
+        <li>{{name}}</li>
+        <li><p>{{description}}</p></li>
+
+        <br>
+        <hr>
+
+        <h3><span class="badge text-bg-success">members</span></h3>
+
+        <br>
+       
+
+        {{#each members}}
+        <li>{{id}}</li>
+        <li>{{name}}</li>
+        <li>{{gender}}</li>
+        <li>{{age}}</li>
+        
+        
+        {{/each}}
+        {{/each}}
+        {{/each}}
+        </ul>
+      </div>  
+    </section>
+</div>
