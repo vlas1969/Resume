@@ -40,12 +40,36 @@
         <li>{{name}}</li>
         <li>{{gender}}</li>
         <li>{{age}}</li>
+        {{#each mutual_friends}}
+        <li>{{id}}</li>
+        <li>{{name}}</li>
+        <li>{{gender}}</li>
+        <li>{{age}}</li>
+        {{/each}}
+        {{/each}}
+        <h2><span class="badge text-bg-warning">groups</span></h2>
+        {{#each groups}}
+        <li>{{id}}</li>
+        <li>{{name}}</li>
+        <li><p>{{description}}</p></li>
+        {{#each members}}
+        <li>{{id}}</li>
+        <li>{{name}}</li>
+        <li>{{gender}}</li>
+        <li>{{age}}</li>
+        {{/each}}
+        {{#each members}}
+        <li>{{id}}</li>
+        <li>{{name}}</li>
+        <li>{{gender}}</li>
+        <li>{{age}}</li>
+        {{/each}}
         {{/each}}
         {{/each}}
         <br>
         <hr>
 
-        <h2><span class="badge text-bg-warning">groups</span></h2>
+        
         
         <br>
         <hr>
@@ -69,10 +93,15 @@
         <li>{{gender}}</li>
         <li>{{age}}</li>
         {{/each}}
+        {{/each}}
 
        
 
-        {{/each}}
+        <br>
+        <hr>
+
+
+        
         {{/each}}
         </ul>
       </div>  
