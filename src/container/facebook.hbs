@@ -31,7 +31,7 @@
         
 
         <br>
-        <hr>
+        
 
         <h3><span class="badge text-bg-success">mutual_friends</span></h3>
 
@@ -41,22 +41,24 @@
         <li>{{gender}}</li>
         <li>{{age}}</li>
         {{/each}}
+        
         {{/each}}
         <br>
         <hr>
 
-        <h2><span class="badge text-bg-warning">groups</span></h2>
         
-        <br>
-        <hr>
+        
+          
 
         {{#each groups}}
+        <h2><span class="badge text-bg-warning">groups</span></h2>
+
         <li>{{id}}</li>
         <li>{{name}}</li>
         <li><p>{{description}}</p></li>
 
         <br>
-        <hr>
+        
 
         <h3><span class="badge text-bg-success">members</span></h3>
 
@@ -69,7 +71,42 @@
         <li>{{gender}}</li>
         <li>{{age}}</li>
         
+              
+        {{/each}}
+        {{/each}} 
         
+        <br>
+        <hr>
+
+        
+        
+
+        {{#each friends}}
+        <li>{{id}}</li>
+        <li>{{name}}</li>
+        <li>{{gender}}</li>
+        <li>{{age}}</li>
+        {{#each mutual_friends}}
+        <li>{{id}}</li>
+        <li>{{name}}</li>
+        <li>{{gender}}</li>
+        <li>{{age}}</li>
+        {{/each}}
+
+        <br>
+        <hr> 
+        <br>
+        {{#each groups}}
+        <li>{{id}}</li>
+        <li>{{name}}</li>
+        <li><p>{{description}}</p></li>
+        {{#each members}}
+        <li>{{id}}</li>
+        <li>{{name}}</li>
+        <li>{{gender}}</li>
+        <li>{{age}}</li>
+        
+        {{/each}}
         {{/each}}
         {{/each}}
         {{/each}}
