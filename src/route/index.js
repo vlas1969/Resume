@@ -319,7 +319,7 @@ router.get('/facebook', function (req, res) {
   res.render('facebook', {
     layout: 'basic',
     page: {
-      title: 'fasebook page',
+      title: 'facebook page',
     },
     name: 'Facebook',
     users: [
